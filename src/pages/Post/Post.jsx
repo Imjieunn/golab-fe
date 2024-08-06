@@ -32,8 +32,6 @@ const Post = () => {
 		setInitialized(true);
 	}, []);
 
-	console.log(postData);
-
 	const handleInputChange = (e) => {
 		const { value } = e.target;
 		setPostData((prev) => ({ ...prev, requirements: value }));

@@ -23,8 +23,6 @@ const DeadLineInfo = () => {
 		shcoolId && schoolPosts(shcoolId);
 	}, [shcoolId]);
 
-	console.log(enddata);
-
 	const durationSet = [
 		{ duration: 'Min15', name: '15분 이내' },
 		{ duration: 'Min30', name: '30분 이내' },
@@ -42,7 +40,7 @@ const DeadLineInfo = () => {
 
 	return (
 		<div
-			className={`w-full h-[356px] border px-[25px] bg-white rounded-2xl py-[11px] flex flex-col ${enddata && enddata.title ? 'cursor-pointer' : null}}`}
+			className={`w-full h-[60%] border px-[25px] bg-white rounded-2xl py-[11px] flex flex-col ${enddata && enddata.title ? 'cursor-pointer' : null}}`}
 			onClick={enddata && enddata.title ? () => handleClick(enddata.id) : null}
 		>
 			<div className="flex gap-3">
